@@ -10,11 +10,11 @@ class Stack():
     def pop(self):
         return self.items.pop()
 
-    def __is_empty(self):
+    def is_empty(self):
         return self.items == []
 
     def peek(self):
-        if not self.__is_empty():
+        if not self.is_empty():
             return self.items[-1]
 
     def get_stack(self):
